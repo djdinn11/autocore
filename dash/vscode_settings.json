@@ -1,0 +1,41 @@
+{
+    "workbench.colorTheme": "Default Light+",
+    "files.autoSave": "afterDelay",
+    "files.associations": {"*.ini" : "ini"},
+    "cSpell.enabled": true,
+    "cSpell.languageSettings": [
+        {
+          "languageId": "ini",
+          "dictionaries": ["custom"]
+        }
+      ],
+      "cSpell.customDictionaries": {
+        "custom": {
+          "path": "./custom.txt",
+          "addWords": true
+        }
+      },
+      "cSpell.words": [],
+      "cSpell.dictionaries": [
+        "custom-words"
+      ],
+      "cSpell.enableFiletypes": [
+        "plaintext",
+        "markdown",
+        "ini",
+        "cpp",
+        "h"
+      ],
+      "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+      },
+      "editor.suggestOnTriggerCharacters": true,
+      "cSpell.showAutocompleteSuggestions": true,
+      "editor.wordBasedSuggestions": "allDocuments"
+}
+
+
+
+
