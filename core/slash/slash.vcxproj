@@ -139,8 +139,8 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ProgramDatabaseFile>$(SolutionDir)$(TargetName).pdb</ProgramDatabaseFile>
-      <AdditionalLibraryDirectories>C:\DJ\My Folder\Auto Core\shared\auto_core_dll\;C:\DJ\My Folder\Auto Core\lib\</AdditionalLibraryDirectories>
-      <AdditionalDependencies>auto_core_dll.lib;tag.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\DJ\My Folder\Auto Core\lib\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>auto_core.lib;tag.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

@@ -92,9 +92,9 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(SolutionDir)\</OutDir>
+    <OutDir>..\..\lib\</OutDir>
     <IntDir>C:\DJ\Programming\Project Files\Auto Core\$(TargetName)\</IntDir>
-    <TargetName>auto_core_dll</TargetName>
+    <TargetName>auto_core</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -169,6 +169,10 @@
       <EnableUAC>false</EnableUAC>
       <ProgramDatabaseFile>$(SolutionDir)$(TargetName).pdb</ProgramDatabaseFile>
     </Link>
+    <PostBuildEvent>
+      <Command>if not exist "C:\DJ\My Folder\Auto Core\bin\" mkdir "C:\DJ\My Folder\Auto Core\bin\"
+xcopy /Y /D "$(TargetPath)" "C:\DJ\My Folder\Auto Core\bin\"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
